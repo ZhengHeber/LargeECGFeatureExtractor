@@ -1,3 +1,4 @@
+
 # Learning Generic Dissimilarity Representations with Large ECG Model for CVDs Detection
 
 This repository contains the implementation for the paper **"Learning Generic Dissimilarity Representations with Large ECG Model for CVDs Detection"**. The code includes pretraining scripts for tokenizers and a complete self-supervised learning process using the Mamba2 model. The generated representations can be evaluated on various downstream tasks for cardiovascular disease (CVD) detection.
@@ -20,6 +21,17 @@ Install the required dependencies listed in the `requirements.txt` file:
 ```bash
 pip install -r requirements.txt
 ```
+
+## Data Preparation
+
+All datasets should be pre-converted into HDF5 format. The organization of the data is as follows:
+
+- **Training Data**: Store in the `Datasets` folder.
+- **Validation Data**: Store in the `Validation` folder.
+- **Log Files**: Store in the `Logs` folder.
+- **Parameter Files**: Store in the `Parameters` folder.
+
+Each dataset should be placed in a separate subfolder within the respective folders. All HDF5 files belonging to a specific dataset should be placed at the same level within its respective subfolder.
 
 ## Pretraining
 
